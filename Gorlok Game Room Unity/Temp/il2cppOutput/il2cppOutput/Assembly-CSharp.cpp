@@ -8086,6 +8086,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tA8193BB29D4D2C7EC04918F3ED18163451
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m57495F692C6CE1CEF278CAD9A98221165D37E636_inline (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method);
 // System.Void UnityEngine.Object::Destroy(UnityEngine.Object,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mAAAA103F4911E9FA18634BF9605C28559F5E2AC7 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___obj0, float ___t1, const RuntimeMethod* method);
+// System.Void UnityEngine.Application::set_targetFrameRate(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_set_targetFrameRate_m0F44C8D07060E17D9D44D176888D14DBABE0CBFC (int32_t ___value0, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Rigidbody2D>()
 inline Rigidbody2D_tD23204FEE9CB4A36737043B97FD409DE05D5DCE5 * Component_GetComponent_TisRigidbody2D_tD23204FEE9CB4A36737043B97FD409DE05D5DCE5_m26E35B19637B4682494A4299BBD06748D17133B1 (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method)
 {
@@ -8447,6 +8449,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PipeSpawner__ctor_m57A0B581BB11CB21860F3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void Quail::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Quail_Awake_mCCAC0CF61A43B611DCC771EF8D30A3B6B38045F6 (Quail_t7972DB70034251987B77DB5084F9D15F7EFB4712 * __this, const RuntimeMethod* method)
+{
+	{
+		// Application.targetFrameRate = 60;
+		Application_set_targetFrameRate_m0F44C8D07060E17D9D44D176888D14DBABE0CBFC(((int32_t)60), /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
 // System.Void Quail::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Quail_Start_mC546CF025653720D0D46B5D703D44B816B2B79C0 (Quail_t7972DB70034251987B77DB5084F9D15F7EFB4712 * __this, const RuntimeMethod* method)
 {
