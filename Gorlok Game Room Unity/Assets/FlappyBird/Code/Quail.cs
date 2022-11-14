@@ -9,6 +9,11 @@ public class Quail : MonoBehaviour
     public AudioSource hurtSound;
     Rigidbody2D rigidBody2D;
 
+    private void Awake()
+    {
+        Application.targetFrameRate = 60;
+    }
+
     void Start()
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
